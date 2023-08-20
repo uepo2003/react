@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  background-color: rgb(162, 156, 156);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ToukouForm{
+  display: inline-block; /* ボタンとしてのサイズを調整するためのプロパティ */
+    padding: 12px 24px; /* ボタンの大きさを調整するための内側の余白 */
+    font-weight: 500;
+    color: #010311;
+    text-decoration: none; /* テキストの下線を非表示に */
+    border: 2px solid #010311; /* ボタンの境界線 */
+    border-radius: 8px; /* ボタンの角を丸く */
+    background-color: #f4f4f4; /* ボタンの背景色 */
+    transition: background-color 0.3s, color 0.3s; /* ホバー時のアニメーション効果 */
+    font-size: 16px; /* テキストのサイズ */
+}
+
+.ToukouForm:hover {
+  background-color: #010311;
+  color: #f4f4f4;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #d51717;
+}
+.post-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fcf7f7;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #e0e6ed;
+  resize: vertical;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.post-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: rgb(26, 5, 5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-button:hover {
+  background-color: #0056b3;
+}
+
+/* App.css */
+
+.hamburger {
+  color: black;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  position: fixed;  /* 追加 */
+  top: 0;           /* 上端から0pxの位置に固定 */
+  right: 0;         /* 右端から0pxの位置に固定 */
+}
+
+
+.menu {
+  position: fixed; /* 追加したスタイル */
+  top: 0;          /* 上端から0pxの位置に固定 */
+  left: 0;         /* 左端から0pxの位置に固定 */
+  height: 100%;    /* メニューの高さをビューポートの100%にする */
+  width: 200px;    /* メニューの幅を200pxに設定 */
+  background: #f4f0f0;
+  border: 1px solid #1a1212;
+  z-index: 1000;   /* 他の要素の上に表示されるようにz-indexを高めに設定 */
+}
+
+
+.menu li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #120b0b;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
